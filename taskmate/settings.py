@@ -121,7 +121,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
@@ -132,3 +132,5 @@ LOGIN_REDIRECT_URL = "todolist"   #after login this help to redirect to todolis
 LOGIN_URL = "login"  #when a user is not logged in then it redirect it to login page
 
 django_heroku.settings(locals())
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
