@@ -133,4 +133,3 @@ LOGIN_URL = "login"  #when a user is not logged in then it redirect it to login 
 
 django_heroku.settings(locals())
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
