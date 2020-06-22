@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
 <title>Index-Taskmate</title>
@@ -6,7 +7,28 @@
 
 {% block content %}
     <div class="container">
-        <h1>{{ index_text }}</h1>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src ="{% static 'images/note1.jpg' %}" alt="notes" width="360" height="250">
+            </div>
+            <div class="col-lg-4">
+                 <img src ="{% static 'images/note2.jpg' %}" alt="notes" width="360" height="250">
+            </div>
+            <div class="col-lg-4">
+                 <img src ="{% static 'images/note3.jpg' %}" alt="notes" width="360" height="250">
+            </div>
+        </div>
+    <div class="row ">
+            <div class="col-lg-4">
+                Quick and easy to use!
+            </div>
+            <div class="col-lg-4">
+                 Plan day to day task!
+            </div>
+            <div class="col-lg-4">
+                 Helps to stay organized!
+            </div>
+        </div>
     </div>
 
 
